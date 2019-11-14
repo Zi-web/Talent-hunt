@@ -1093,6 +1093,15 @@ select.select:focus,
     font-size: 14px;
   }
 }
+@media screen and (max-width: 410px) {
+  .btn--form {
+    font-size: 12px;
+  }
+  .form__wrapper {
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 722px) {
   .popup-consultation__textarea {
     margin-bottom: 10px;

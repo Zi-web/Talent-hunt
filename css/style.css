@@ -996,10 +996,9 @@ select.select:focus,
   color: #6ea4c8;
   font-size: 17px;
   font-family: "Circe-Bold", sans-serif;
-  white-space: nowrap;
+  /*white-space:nowrap;*/
   overflow: hidden;
-  -webkit-animation: type 2s steps(50, end);
-          animation: type 2s steps(50, end);
+  /*animation: type 2s steps(50, end);*/
 }
 @-webkit-keyframes type {
   from {

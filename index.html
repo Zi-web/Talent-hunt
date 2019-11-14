@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Talent-hunt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="main">
+        <div class="header  wrapper">
+         <img src="img/logo.png" alt="">
+         <div class="menu" id="menu">
+            <div class="menu__icon" id="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="menu__links">
+              <li><a class="menu__links-item" href="/">Работодателю</a></li>
+              <li><a class="menu__links-item" href="/">Соискателю</a></li>
+              <li><a class="menu__links-item" href="/">О нас</a></li>
+            </ul>
+          </div>
+          <div class="header__phone">
+            <a href="tel:84950059500">8 (495) 005 95 00</a>
+          </div>
+        </div>
+        
+        <div class="content-wrapper">
+           <div class="content-center">
+            <div class="content">
+              <p class="text-typing">Профессиональная помощь в подборе персонала</p>
+              <h1>Получите первых соискателей на вакансию на следующий день</h1>
+              <ul class="content__items">
+                <li class="content__item  content__item--1">Разместим вакансию</li>
+                <li class="content__item  content__item--2">Сделаем email-рассылку</li>
+                <li class="content__item  content__item--3">Сформируем базу резюме</li>
+                <li class="content__item  content__item--4">Все этапы за 48 часов</li>
+              </ul>
+              <div class="btn__wrap">
+                <button class="btn  btn__send">Отправить заявку</button>
+              <div class="btn__wrap">
+            </div>
+            <!---<div class="content__img">
+            <img src="img/68-689343_executive-business-people-business-people-png.png" alt="">
+            </div>--->
+          </div>
+        </div>
+      </section> 
+
+<!---<div class="popup-consultation  modal-content">--->
+  
+
+  <div class="popup-consultation__form">
+
+    <div class="form__wrapper">
+    <span class="popup-consultation__close"></span>
+                  
+    <form action="#" method="post" class="form" id="form">
+      <h3 class="popup-consultation__title">Заполнение формы</h3>
+      <p class="popup-consultation__descr"></p>
+      
+      <div class="form__item-wrapper">
+      <div class="form__item  form__item--one">   
+        <p>Кто вам нужен? (Название вакансии)</p>     
+        <div class="popup-consultation__input  popup-consultation__input--profession">
+          <label for="profession"></label>
+          <input type="text" name="profession" required placeholder="Повар, программист" id="profession">
+        </div>
+      </div>
+
+      <div class="form__item  form__item--one">   
+        <p>Отрасль</p> 
+        <div class="popup-consultation__textarea">
+          <label for="industries"></label>
+            <textarea name="industries" id="industries" rows="2" required placeholder="Укажите отрасль" class="contacts__form-message"></textarea>
+        </div>
+      </div>
+      
+      <div class="form__item  form__item--two">   
+        <p>Город или регион</p> 
+        <div class="popup-consultation__input  popup-consultation__input--gorod">
+          <label for="gorod"></label>
+          <input type="text" name="gorod" required placeholder="Москва, Краснодар" id="gorod">
+        </div>
+      </div>
+
+      <div class="form__item  form__item--three">   
+        <p>Тип занятости</p> 
+        <div class="select-wrapper">
+          <label for="spec"></label>
+            <select class="select" id="spec" name="spec">
+              <option selected value="Временная">Временная</option>
+              <option value="Постоянная">Постоянная</option>
+              <option value="Проектная">Проектная</option>
+            </select>
+            <div class="select-arrow"></div>
+            <div class="select-arrow"></div>
+        </div>
+      </div>
+
+      <div class="form__item  form__item--two">   
+        <p>Город или регион</p> 
+        <div class="select-wrapper">
+          <label for="spec"></label>
+            <select class="select" id="spec" name="spec">
+              <option selected value="">ИТ, Сельское хозяйство</option>
+              <option value="Исполнитель">Неделя</option>
+              <option value="Заказчик">Неделя</option>
+            </select>
+            <div class="select-arrow"></div>
+            <div class="select-arrow"></div>
+        </div>
+      </div>
+  
+      <div class="form__item  form__item--two">   
+        <p>График работы</p> 
+        <div class="timetable">
+        <div class="popup-consultation__input  popup-consultation__input--timetable">
+            <label for="timetable1"></label>
+            <input type="text" required name="timetable1" placeholder="С" id="timetable1">
+        </div>
+        <div class="popup-consultation__input  popup-consultation__input--timetable">
+            <label for="timetable2"></label>
+            <input type="text" required name="timetable2" placeholder="До" id="timetable2">
+        </div>
+        </div>
+      </div>
+      
+      <div class="zp">
+        <p>Зарплата</p>
+        <div class="zp__wrap">
+          <div class="popup-consultation__input  popup-consultation__input--zp1">
+            <label for="zp1"></label>
+            <input type="text" name="zp1" placeholder="От" id="zp1">
+          </div>
+          <span>Руб</span>
+          <div class="popup-consultation__input  popup-consultation__input--zp1">
+            <label for="zp2"></label>
+            <input type="text" name="zp2" placeholder="До" id="zp2">
+          </div>
+          <span>Руб</span>
+          <div class="popup-consultation__input--zp1">
+            <div class="select-wrapper form__item--two">
+              <label for="pay"></label>
+                <select class="select" id="pay" name="pay">
+                  <option selected value="в месяц">в месяц</option>
+                  <option value="в неделю">в неделю</option>
+                  <option value="в день">в день</option>
+                  <option value="в год">в год</option>
+                </select>
+                <div class="select-arrow"></div>
+                <div class="select-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__textarea  form__item--one">   
+        <p>График работы</p> 
+        <div class="popup-consultation__textarea">
+          <label for="who"></label>
+            <textarea name="who" id="who" rows="16" required placeholder="Укажите должностные обязанности, которые будет выполнять сотрудник.    
+            Например:
+            • Разгрузочно - погрузочные работы;
+            • Своевременная доставка груза;
+            • Качественная и своевременная доставка грузов по СПб и ЛО;
+            • Соблюдение ПДД." class="contacts__form-message"></textarea>
+        </div>
+      </div>
+
+      <div class="form__textarea  form__item--one">   
+        <p>Требования и квалификации</p> 
+        <div class="popup-consultation__textarea">
+          <label for="who"></label>
+            <textarea name="who" id="who" rows="10" required placeholder="Укажите необходимый список навыков и умений, которыми должен обладать
+            соискатель
+            Например:
+            • Права категории «В»;
+            • Опыт управления ТС более 1 года."></textarea>
+        </div>
+      </div>
+      
+
+      <div class="exp__wrap">
+        <div class="form__item  form__item--two">   
+        <p>Опыт работы</p> 
+          <div class="popup-consultation__input  popup-consultation__input--exp">
+            <label for="exp"></label>
+            <input type="text" required name="exp" placeholder="Лет" id="exp">
+          </div>
+        </div>
+        <!--<span>Лет</span>--->
+        <div class="form__item  form__item--two">   
+        <p>Образование</p>
+          <div class="select-wrapper">
+            <label for="ed"></label>
+              <select class="select" id="ed" name="ed">
+                <option selected value="Высшее">Высшее</option>
+                <option value="Среднее">Среднее</option>
+                <option value="Среднее специальное">Среднее специальное</option>
+                <option value="без образования">без образования</option>
+              </select>
+              <div class="select-arrow"></div>
+              <div class="select-arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__textarea  form__item--one">   
+        <p>Условия работы</p> 
+        <div class="popup-consultation__textarea">
+          <label for="condition"></label>
+            <textarea name="condition" id="condition" rows="10" required placeholder="Укажите условия работы для соискателя
+            Например:
+            • 100% обеспечение заказами в течение всей рабочей смены;
+            • Автомобили до 2016 года выпуска;
+            • Ежедневные выплаты от 3000р. без задержек;
+            • Бонусы лучшим водителям;
+            • Техническое обслуживание за счет компании."></textarea>
+        </div>
+      </div>
+
+      <div class="form__item  form__item--one">   
+        <p>Адрес работы</p>
+        <div class="popup-consultation__input  popup-consultation__input--address">
+          <label for="address"></label>
+          <input type="text" required name="address" placeholder="Укажите адрес работы" id="address">
+        </div>
+      </div>
+
+      <div class="map">
+        <img src="img/map.png" alt="map">
+      </div>
+
+      <p style="text-align: left;">Контактная информация (будет указана в вакансии)</p>
+      <div class="form__item  form__item--one">   
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+            <input type="checkbox">
+            <label class="container">Анонимное размещение</label>
+            <span class="checkmark"></span>
+        </div>
+      </div>
+
+      <div class="form__item  form__item--two">   
+        <p>Телефон для соискателей</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="tel"></label>
+              <input type="tel" name="tel" required placeholder="Номер телефона *" class="contacts__form-tel">
+        </div>
+      </div>
+
+      <div class="form__item  form__item--two">   
+        <p>Имя</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Введите ваше имя *" id="name1" class="contacts__form-name">
+        </div>
+      </div>
+
+      <div class="form__item  form__item--two">   
+        <p>Сайт</p>
+        <div class="popup-consultation__input">
+                <label for="email"></label>
+                <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
+        </div>
+      </div>
+      
+      <div class="form__item  form__item--two">   
+        <p>Название компании</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Компания" id="name1" class="contacts__form-name">
+        </div>
+      </div>
+      <div class="form__item  form__item--two">   
+        <p>ИНН</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="ИНН" id="name1" class="contacts__form-name">
+        </div>
+      </div>
+      <div class="form__item  form__item--two">   
+        <p>Ваша должность</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Ваша должность" id="name1" class="contacts__form-name">
+        </div>
+      </div>
+      <div class="form__textarea  form__item--one">   
+        <p>Информация о компании</p>
+        <div class="popup-consultation__textarea">
+          <label for="condition"></label>
+            <textarea name="condition" id="condition" rows="10" required placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="form__item  form__item--two">   
+        <p>Телефон для связи</p>
+        <div class="popup-consultation__input  popup-consultation__input--anonim">
+              <label for="tel"></label>
+              <input type="tel" name="tel" required placeholder="Номер телефона *" class="contacts__form-tel">
+        </div>
+      </div>
+      
+      <div class="form__item  form__item--two">   
+        <p>Почта для связи</p>
+        <div class="popup-consultation__input">
+                <label for="email"></label>
+                <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
+        </div>
+      </div>
+    </div>
+      <div class="btn__wrap--form">
+        <button type="submit" class="btn  btn--form">Отправить заявку</button>
+      </div>
+    </form>  
+ </div>
+
+</div> 
+
+
+
+  
+  <script type="text/javascript" src="js/menu.js"></script>
+  <!---<script type="text/javascript" src="js/popap.js"></script>--->
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

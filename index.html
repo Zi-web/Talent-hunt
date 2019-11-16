@@ -5,9 +5,7 @@
     <title>Talent-hunt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
 
   </head>
   <body>
@@ -37,7 +35,7 @@
            <div class="content-center">
             <div class="content">
               <p class="text-typing">Профессиональная помощь в подборе персонала</p>
-              <h1>Получите первых соискателей на вакансию на следующий день</h1>
+              <h1>Получите первых соискателей на следующий день</h1>
               <ul class="content__items">
                 <li class="content__item  content__item--1">Разместим вакансию</li>
                 <li class="content__item  content__item--2">Сделаем email-рассылку</li>
@@ -48,22 +46,16 @@
                 <button class="btn  btn__send">Отправить заявку</button>
               <div class="btn__wrap">
             </div>
-            <!---<div class="content__img">
-            <img src="img/68-689343_executive-business-people-business-people-png.png" alt="">
-            </div>--->
           </div>
         </div>
-      </section> 
-
-<!---<div class="popup-consultation  modal-content">--->
-  
+      </section>   
 
   <div class="popup-consultation__form">
 
     <div class="form__wrapper">
     <span class="popup-consultation__close"></span>
                   
-    <form action="#" method="post" class="form" id="form">
+    <form action="mail.php" method="post" class="form" id="form">
       <h3 class="popup-consultation__title">Заполнение формы</h3>
       <p class="popup-consultation__descr"></p>
       
@@ -106,20 +98,6 @@
         </div>
       </div>
 
-      <div class="form__item  form__item--two">   
-        <p>Город или регион</p> 
-        <div class="select-wrapper">
-          <label for="spec"></label>
-            <select class="select" id="spec" name="spec">
-              <option selected value="">ИТ, Сельское хозяйство</option>
-              <option value="Исполнитель">Неделя</option>
-              <option value="Заказчик">Неделя</option>
-            </select>
-            <div class="select-arrow"></div>
-            <div class="select-arrow"></div>
-        </div>
-      </div>
-  
       <div class="form__item  form__item--two">   
         <p>График работы</p> 
         <div class="timetable">
@@ -164,7 +142,7 @@
       </div>
 
       <div class="form__textarea  form__item--one">   
-        <p>График работы</p> 
+        <p>Кто вам нужен (название вакансии)</p> 
         <div class="popup-consultation__textarea">
           <label for="who"></label>
             <textarea name="who" id="who" rows="16" required placeholder="Укажите должностные обязанности, которые будет выполнять сотрудник.    
@@ -179,8 +157,8 @@
       <div class="form__textarea  form__item--one">   
         <p>Требования и квалификации</p> 
         <div class="popup-consultation__textarea">
-          <label for="who"></label>
-            <textarea name="who" id="who" rows="10" required placeholder="Укажите необходимый список навыков и умений, которыми должен обладать
+          <label for="requirements"></label>
+            <textarea name="requirements" id="requirements" rows="10" required placeholder="Укажите необходимый список навыков и умений, которыми должен обладать
             соискатель
             Например:
             • Права категории «В»;
@@ -243,8 +221,8 @@
       <p style="text-align: left;">Контактная информация (будет указана в вакансии)</p>
       <div class="form__item  form__item--one">   
         <div class="popup-consultation__input  popup-consultation__input--anonim">
-            <input type="checkbox">
-            <label class="container">Анонимное размещение</label>
+            <input type="checkbox" id="anonim" anonim="check" value="Анонимное размещение">
+            <label class="container" for="anonim">Анонимное размещение</label>
             <span class="checkmark"></span>
         </div>
       </div>
@@ -252,8 +230,8 @@
       <div class="form__item  form__item--two">   
         <p>Телефон для соискателей</p>
         <div class="popup-consultation__input  popup-consultation__input--anonim">
-              <label for="tel"></label>
-              <input type="tel" name="tel" required placeholder="Номер телефона *" class="contacts__form-tel">
+              <label for="tel1"></label>
+              <input type="tel" name="tel1" id="tel1" required placeholder="Номер телефона" class="contacts__form-tel">
         </div>
       </div>
 
@@ -261,52 +239,52 @@
         <p>Имя</p>
         <div class="popup-consultation__input  popup-consultation__input--anonim">
               <label for="name"></label>
-              <input type="text" name="name" required placeholder="Введите ваше имя *" id="name1" class="contacts__form-name">
+              <input type="text" name="name" required placeholder="Введите ваше имя" id="name" class="contacts__form-name">
         </div>
       </div>
 
       <div class="form__item  form__item--two">   
         <p>Сайт</p>
         <div class="popup-consultation__input">
-                <label for="email"></label>
-                <input type="email" name="email" required placeholder="E-mail" id="email" class="content__form-email">
+                <label for="site"></label>
+                <input type="email" name="site" required placeholder="E-mail" id="site" class="content__form-email">
         </div>
       </div>
       
       <div class="form__item  form__item--two">   
         <p>Название компании</p>
-        <div class="popup-consultation__input  popup-consultation__input--anonim">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Компания" id="name1" class="contacts__form-name">
+        <div class="popup-consultation__input">
+              <label for="job_title"></label>
+              <input type="text" name="job_title" required placeholder="Компания" id="job_title" class="contacts__form-name">
         </div>
       </div>
       <div class="form__item  form__item--two">   
         <p>ИНН</p>
         <div class="popup-consultation__input  popup-consultation__input--anonim">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="ИНН" id="name1" class="contacts__form-name">
+              <label for="inn"></label>
+              <input type="text" name="inn" required placeholder="ИНН" id="inn" class="contacts__form-name">
         </div>
       </div>
       <div class="form__item  form__item--two">   
         <p>Ваша должность</p>
         <div class="popup-consultation__input  popup-consultation__input--anonim">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Ваша должность" id="name1" class="contacts__form-name">
+              <label for="position"></label>
+              <input type="text" name="position" required placeholder="Ваша должность" id="position" class="contacts__form-name">
         </div>
       </div>
       <div class="form__textarea  form__item--one">   
         <p>Информация о компании</p>
         <div class="popup-consultation__textarea">
-          <label for="condition"></label>
-            <textarea name="condition" id="condition" rows="10" required placeholder=""></textarea>
+          <label for="info"></label>
+            <textarea name="info" id="info" rows="10" required placeholder=""></textarea>
         </div>
       </div>
 
       <div class="form__item  form__item--two">   
         <p>Телефон для связи</p>
         <div class="popup-consultation__input  popup-consultation__input--anonim">
-              <label for="tel"></label>
-              <input type="tel" name="tel" required placeholder="Номер телефона *" class="contacts__form-tel">
+              <label for="you_tel"></label>
+              <input type="tel" name="you_tel" id="you_tel" required placeholder="Номер телефона" class="contacts__form-tel">
         </div>
       </div>
       
@@ -330,7 +308,6 @@
 
   
   <script type="text/javascript" src="js/menu.js"></script>
-  <!---<script type="text/javascript" src="js/popap.js"></script>--->
   <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

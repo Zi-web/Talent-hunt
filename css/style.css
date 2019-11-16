@@ -374,7 +374,7 @@ template {
   transition: all 0.4s linear;
   left: 0%;
   opacity: 1;
-  z-index: 2;
+  z-index: 5;
 }
 .hidden {
   transition: all 0.4s linear;
@@ -556,7 +556,7 @@ template {
   display: block;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 4;
   -webkit-animation: bounce 0.7s;
           animation: bounce 0.7s;
 }
@@ -980,7 +980,7 @@ select.select:focus,
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1000;
+  z-index: 3;
 }
 .header__phone a {
   color: #fffdff;
